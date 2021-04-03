@@ -1,0 +1,35 @@
+{
+  "name": "google-storage",
+  "version": "1.0.0",
+  "description": "Google Storage functionality with stub/mock for unit tests",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha test/** --timeout 10000 --exit",
+    "test-coverage": "nyc --reporter=lcov --reporter=text npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Chetan07j/gcp-componenets.git"
+  },
+  "keywords": [
+    "google-storage",
+    "stub",
+    "mock",
+    "bucket-stub"
+  ],
+  "author": "chetan0779@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chetan07j/gcp-componenets/issues"
+  },
+  "homepage": "https://github.com/Chetan07j/gcp-componenets#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^5.8.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  }
+}

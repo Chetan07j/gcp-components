@@ -1,0 +1,28 @@
+{
+  "name": "bigquery-trigger-cf",
+  "version": "1.0.0",
+  "description": "Storage triggered Cloud Function to execute/run BigQuery statement",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha test/** --timeout 10000 --exit",
+    "test-coverage": "nyc --reporter=lcov --reporter=text npm test"
+  },
+  "keywords": [
+    "bigquery",
+    "sinon",
+    "stub"
+  ],
+  "author": "chetan0779@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.2"
+  }
+}
